@@ -1,0 +1,895 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --main-color: #8E66DB;
+  --main-color-alt: #41007e;
+  --second-color: #edddff;
+  --main-text-color: #9494AA;
+  --onhold-color: #4756AE;
+  --onhold-color-alt: #3f4c94;
+  --trans-height: 120px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+body {
+  background: #F4F3FC;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 1rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-50 {
+  width: 100%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-25 {
+  width: 100%;
+  max-width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 370px;
+  padding: 1rem;
+}
+
+.main-content-collapse {
+  margin-left: 2rem;
+}
+
+.navbar {
+  background: #fff;
+  padding: 1rem;
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar button {
+  outline: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.navbar button i {
+  font-size: 1.5rem;
+}
+
+.sidebar {
+  width: 350px;
+  background: #fff;
+  position: absolute;
+  left: -9999px;
+  height: calc(100% - 70px);
+}
+
+.sidebar .sidebar-container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sidebar .sidebar-container .row {
+  padding: 0;
+}
+
+.sidebar .sidebar-top {
+  background: var(--main-color);
+  width: 100%;
+  max-height: 300px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .sidebar-top .sidebar-flex {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sidebar .sidebar-top button {
+  display: none;
+}
+
+.sidebar .sidebar-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .sidebar-photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar .sidebar-info {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .sidebar-info p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.sidebar .sidebar-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.sidebar .sidebar-button a {
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .5rem 2rem;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-item {
+  margin-top: 2rem;
+}
+
+.sidebar .sidebar-item ul {
+  padding-left: 1rem;
+}
+
+.sidebar .sidebar-item ul li {
+  margin-top: 2rem;
+  padding: .4rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sidebar .sidebar-item ul li:hover {
+  background: #eeeeee;
+}
+
+.sidebar .sidebar-item ul li a {
+  display: block;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.sidebar .sidebar-item ul li a:hover {
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.sidebar .sidebar-item ul li a i {
+  -webkit-transition: .1s;
+  transition: .1s;
+  margin-right: 1rem;
+}
+
+.sidebar-collapse {
+  left: 0;
+}
+
+.wallet {
+  width: 98%;
+}
+
+.wallet .wallet-container {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  background: var(--second-color);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.wallet .wallet-container .wallet-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.wallet .wallet-container .wallet-header p {
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+
+.wallet .wallet-container .wallet-center {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wallet .wallet-container .wallet-center p {
+  font-size: 1rem;
+}
+
+.wallet .wallet-container .wallet-center h1 {
+  font-weight: 500;
+}
+
+.wallet .wallet-container .wallet-center span {
+  font-size: 1.2rem;
+}
+
+.wallet .wallet-container .wallet-footer {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wallet .wallet-container .wallet-footer .wallet-footer-item {
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wallet .wallet-container .wallet-footer .wallet-footer-item p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.wallet .wallet-container .wallet-footer .wallet-footer-item i {
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.wallet .wallet-container .wallet-footer .wallet-footer-item span {
+  color: #000;
+}
+
+.loan {
+  width: 98%;
+}
+
+.loan .loan-container {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.loan .loan-container .loan-center {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loan .loan-container .loan-center p {
+  font-size: 1.3rem;
+  padding-bottom: 1.2rem;
+}
+
+.loan .loan-container .loan-center a {
+  background: #4400C2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: .5rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loan .loan-container .loan-center a:hover {
+  background: #5900ff;
+}
+
+.make-payments .payments-content {
+  width: 100%;
+  height: 139px;
+  border-radius: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.make-payments .payments-content .payments-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: .6;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.make-payments .payments-content .payments-title p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 2px;
+}
+
+.make-payments .payments-content .payments-title i {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  font-size: .9rem;
+  color: var(--main-color);
+}
+
+.make-payments .payments-content .payments-slider {
+  width: -webkit-fill-available;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.make-payments .payments-content .payments-slider .pay-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000;
+  margin: 0 1rem;
+}
+
+.make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a i {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a i:hover {
+  color: var(--main-color);
+}
+
+.make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a span {
+  font-size: 1rem;
+  opacity: .5;
+}
+
+.make-payments .payments-content .payments-slider .payments-nav-btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.transactions {
+  padding: 1rem;
+  background: #F8F8F8;
+  border-radius: .2rem;
+  -webkit-box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.089);
+          box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.089);
+}
+
+.transactions .trans {
+  margin-top: 1rem;
+  width: 100%;
+  height: var(--trans-height);
+  border-radius: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.transactions .trans .img-txt {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transactions .trans .img-txt p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.transactions .trans .img-txt img {
+  width: 100%;
+  height: var(--trans-height);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.transactions .trans .content {
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transactions .trans .content p {
+  pointer-events: none;
+  font-size: 1.1rem;
+  color: #919191;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.transactions .trans .content .status {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: .2rem .8rem;
+  border-radius: 1rem;
+}
+
+.transactions .trans .content .processed {
+  background: var(--main-color);
+}
+
+.transactions .trans .content .processed:hover {
+  background: var(--main-color-alt);
+}
+
+.transactions .trans .content .onhold {
+  background: var(--onhold-color);
+}
+
+.transactions .trans .content .onhold:hover {
+  background: var(--onhold-color-alt);
+}
+
+.transactions .trans .content input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+}
+
+hr {
+  border: 1px solid #E5E5E5;
+  margin: 2rem 0;
+}
+
+.mobile-hide {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none;
+  }
+  .main-content, .main-content-collapse {
+    margin: 0;
+  }
+  .col-50 {
+    max-width: 100%;
+  }
+  .sidebar {
+    z-index: 50;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  .sidebar .sidebar-top button {
+    display: block;
+    background: #1a1a1a;
+    cursor: pointer;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .3rem;
+  }
+  .sidebar .sidebar-top button i {
+    font-size: 1.5rem;
+    color: #636363;
+  }
+  .make-payments .payments-content {
+    height: auto;
+    display: block;
+    padding: 1rem;
+  }
+  .make-payments .payments-content .payments-title {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem 0;
+    opacity: 1;
+  }
+  .make-payments .payments-content .payments-title p {
+    opacity: .5;
+  }
+  .make-payments .payments-content .payments-title .mobile-nav button {
+    margin-right: 1rem;
+    background: none;
+  }
+  .make-payments .payments-content .payments-title .mobile-nav button i {
+    font-size: 2rem;
+    -webkit-transform: none;
+            transform: none;
+    color: #000;
+  }
+  .loan .loan-container .loan-center a {
+    font-size: .8rem;
+  }
+  .transactions .trans .img-txt p {
+    font-size: 1.2rem;
+  }
+  .transactions .trans .img-txt img {
+    width: 50%;
+  }
+  .transactions .trans .content p, .transactions .trans .content input {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-hide {
+    display: none;
+  }
+  .main-content, .main-content-collapse {
+    margin: 0;
+  }
+  .col-50 {
+    max-width: 100%;
+  }
+  .sidebar {
+    z-index: 50;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  .sidebar .sidebar-top button {
+    display: block;
+    background: #1a1a1a;
+    cursor: pointer;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .3rem;
+  }
+  .sidebar .sidebar-top button i {
+    font-size: 1.5rem;
+    color: #636363;
+  }
+  .make-payments .payments-content {
+    height: auto;
+    display: block;
+    padding: 1rem;
+  }
+  .make-payments .payments-content .payments-title {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem 0;
+    opacity: 1;
+  }
+  .make-payments .payments-content .payments-title p {
+    opacity: .5;
+  }
+  .make-payments .payments-content .payments-title .mobile-nav button {
+    margin-right: 1rem;
+    background: none;
+  }
+  .make-payments .payments-content .payments-title .mobile-nav button i {
+    font-size: 2rem;
+    -webkit-transform: none;
+            transform: none;
+    color: #000;
+  }
+  .loan .loan-container .loan-center a {
+    font-size: .8rem;
+  }
+  .transactions .trans .content p, .transactions .trans .content input {
+    display: none;
+    margin: 0;
+  }
+  .transactions .trans .content .status {
+    margin-left: 1rem;
+    display: block;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .transactions .trans .content p, .transactions .trans .content input {
+    display: block;
+    margin: 0 1rem;
+    font-size: .9rem;
+  }
+  .transactions .trans .content .status {
+    margin-left: 1rem;
+    display: block;
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mobile-hide {
+    display: block;
+  }
+  .main-content {
+    margin-left: 370px;
+  }
+  .main-content-collapse {
+    margin-left: 0;
+  }
+  .col-50 {
+    max-width: 50%;
+  }
+  .sidebar {
+    z-index: 50;
+    bottom: auto;
+    top: auto;
+    height: calc(100% - 70px);
+  }
+  .sidebar .sidebar-top button {
+    display: none;
+  }
+  .make-payments hr {
+    display: none;
+  }
+  .make-payments .payments-content {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+  }
+  .make-payments .payments-content .payments-title {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem 0;
+    opacity: 1;
+  }
+  .make-payments .payments-content .payments-title p {
+    opacity: .5;
+  }
+  .make-payments .payments-content .payments-title .mobile-nav {
+    display: none;
+  }
+  .loan .loan-container .loan-center a {
+    font-size: 1rem;
+  }
+  .transactions .trans .img-txt p {
+    font-size: 1.2rem;
+  }
+  .transactions .trans .img-txt img {
+    width: 50%;
+  }
+  .transactions .trans .content p, .transactions .trans .content input {
+    display: block;
+    margin: 0 1.6rem;
+    font-size: 1.1rem;
+  }
+  .transactions .trans .content .status {
+    margin-left: 0;
+    display: block;
+    font-size: .8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
