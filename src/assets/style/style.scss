@@ -27,10 +27,6 @@ body{
     background: #F4F3FC;
 }
 
-body, html, #root, .wrapper{
-    height: 100%;
-}
-
 .wrapper{
     position: relative;
 }
@@ -619,6 +615,11 @@ hr{
             }
         }    
     }
+
+    body, html, #root, .wrapper{
+        height: auto;
+    }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -717,6 +718,10 @@ hr{
                 }
             }
         }    
+    }
+
+    body, html, #root, .wrapper{
+        height: auto;
     }
 
 }
@@ -839,6 +844,10 @@ hr{
                 }
             }
         }    
+    }
+
+    body, html, #root, .wrapper{
+        height: 100%;
     }
 
 }

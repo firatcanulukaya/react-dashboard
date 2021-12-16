@@ -28,10 +28,6 @@ body {
   background: #F4F3FC;
 }
 
-body, html, #root, .wrapper {
-  height: 100%;
-}
-
 .wrapper {
   position: relative;
 }
@@ -746,6 +742,9 @@ hr {
   .transactions .trans .content p, .transactions .trans .content input {
     display: none;
   }
+  body, html, #root, .wrapper {
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -815,6 +814,9 @@ hr {
     margin-left: 1rem;
     display: block;
     font-size: 1rem;
+  }
+  body, html, #root, .wrapper {
+    height: auto;
   }
 }
 
@@ -894,6 +896,9 @@ hr {
     margin-left: 0;
     display: block;
     font-size: .8rem;
+  }
+  body, html, #root, .wrapper {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
