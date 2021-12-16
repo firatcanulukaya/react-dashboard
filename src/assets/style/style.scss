@@ -27,6 +27,10 @@ body{
     background: #F4F3FC;
 }
 
+body, html, #root, .wrapper{
+    height: 100%;
+}
+
 .wrapper{
     position: relative;
 }

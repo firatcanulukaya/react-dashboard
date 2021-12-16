@@ -8,8 +8,11 @@ import MakePayment from './components/MakePayment'
 import Transactions from './components/Transactions';
 
 export default function App() {
-
   const [menu, setMenu] = useState([]);
+  const [user, setUser] = useState();
+  const [wallet, setWallet] = useState();
+  const [loan, setLoan] = useState();
+
   useEffect(() => {
     fetch('https://601d848abe5f340017a19c29.mockapi.io/menu')
       .then(response => response.json())
@@ -17,9 +20,6 @@ export default function App() {
       .catch(error => console.log(error));
   }, []);
 
-  const [user, setUser] = useState();
-  const [wallet, setWallet] = useState();
-  const [loan, setLoan] = useState();
   useEffect(() => {
     fetch('https://601d848abe5f340017a19c29.mockapi.io/dashboard')
       .then(response => response.json())

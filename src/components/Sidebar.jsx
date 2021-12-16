@@ -1,6 +1,6 @@
 import { React } from 'react'
 
-export default function Sidebar(props) {
+const Sidebar = (props) => {
 
     const { menu, user, sidebarCollapse } = props;
 
@@ -34,8 +34,8 @@ export default function Sidebar(props) {
 
             <div className="sidebar-item">
                 <ul>
-                    {menu.map(item => (
-                        <li key={item.name}>
+                    {menu.map((item, index) => (
+                        <li key={index}>
                             <a href={item.link}>
                                 {(() => {
                                     switch (item.name) {
@@ -65,3 +65,5 @@ export default function Sidebar(props) {
         </div >
     )
 }
+
+export default Sidebar
