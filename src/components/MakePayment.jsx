@@ -26,17 +26,20 @@ const MakePayment = ({ data }) => {
   const nextSlide = () => {
     if (current[1] < data.length) {
       setCurrent([current[0] + 5, current[1] + 5]);
+    } else if (current[1] === data.length) {
+      setCurrent([0, 5]);
     }
   };
 
   const prevSlide = () => {
     if (current[0] > 0) {
       setCurrent([current[0] - 5, current[1] - 5]);
+    } else if (current[0] === 0) {
+      setCurrent([data.length - 5, data.length]);
     }
   };
 
   if (!Array.isArray(data) || data.length <= 0) return null;
-
   return (
     <div className="make-payments">
       <div className="payments-content">
@@ -72,9 +75,9 @@ const MakePayment = ({ data }) => {
             </button>
 
             {showingData.map((item, index) => (
-              <div className={"payments-slider-content"} key={index}>
+              <div className="payments-slider-content" key={index}>
                 <a href={`/${item.title}`}>
-                  <i className={`${item.icon}`}></i>
+                  <i className={item.icon}></i>
                   <span>{item.title}</span>
                 </a>
               </div>
