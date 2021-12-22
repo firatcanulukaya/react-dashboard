@@ -81,7 +81,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 370px;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .main-content-collapse {
@@ -481,6 +481,8 @@ body {
           flex-direction: column;
   color: #000;
   margin: 0 1rem;
+  -webkit-transition: all 0.01s;
+  transition: all 0.01s;
 }
 
 .make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a i {
@@ -488,13 +490,13 @@ body {
   margin-bottom: 5px;
 }
 
-.make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a i:hover {
-  color: var(--main-color);
-}
-
 .make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a span {
   font-size: 1rem;
   opacity: 0.5;
+}
+
+.make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a:hover {
+  color: var(--main-color);
 }
 
 .make-payments .payments-content .payments-slider .payments-nav-btn {
@@ -503,7 +505,13 @@ body {
   background: transparent;
   font-size: 2rem;
   margin: 0 2rem;
+  -webkit-transition: all 0.01s;
+  transition: all 0.01s;
   cursor: pointer;
+}
+
+.make-payments .payments-content .payments-slider .payments-nav-btn:hover {
+  color: var(--main-color);
 }
 
 .transactions {
