@@ -25,13 +25,13 @@ const MakePayment = ({ data }) => {
 
   const nextSlide = () => {
     if (current[1] < data.length) {
-      setCurrent([current[0] + 1, current[1] + 1]);
+      setCurrent([current[0] + 5, current[1] + 5]);
     }
   };
 
   const prevSlide = () => {
     if (current[0] > 0) {
-      setCurrent([current[0] - 1, current[1] - 1]);
+      setCurrent([current[0] - 5, current[1] - 5]);
     }
   };
 

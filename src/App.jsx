@@ -61,64 +61,85 @@ export default function App() {
 
   const paysData = [
     {
-      id: "12",
       title: "Donations",
       icon: "fas fa-hand-holding-usd",
     },
     {
-      id: "13",
       title: "Airtime",
       icon: "fas fa-phone",
     },
     {
-      id: "14",
       title: "Internet",
       icon: "fas fa-wifi",
     },
     {
-      id: "15",
       title: "Data",
       icon: "fas fa-database",
     },
     {
-      id: "16",
       title: "Electricity",
       icon: "fas fa-bolt",
     },
     {
-      id: "17",
       title: "Betting",
       icon: "fas fa-clipboard-list",
     },
     {
-      id: "18",
       title: "Water",
       icon: "fas fa-tint",
     },
     {
-      id: "19",
       title: "Rent",
       icon: "fas fa-home",
     },
     {
-      id: "20",
       title: "Transport",
       icon: "fas fa-bus",
     },
     {
-      id: "21",
       title: "Ad",
       icon: "fab fa-google",
     },
     {
-      id: "22",
       title: "Insurance",
       icon: "fas fa-shield-alt",
     },
     {
-      id: "23",
       title: "Hospital",
       icon: "fas fa-hospital",
+    },
+    {
+      title: "Groceries",
+      icon: "fas fa-shopping-basket",
+    },
+    {
+      title: "Clothes",
+      icon: "fas fa-tshirt",
+    },
+    {
+      title: "Entertainment",
+      icon: "fas fa-film",
+    },
+    {
+      title: "Gifts",
+
+      icon: "fas fa-gift",
+    },
+    {
+      title: "Education",
+      icon: "fas fa-graduation-cap",
+    },
+    {
+      title: "Baby",
+      icon: "fas fa-baby",
+    },
+    {
+      title: "Beach",
+      icon: "fas fa-umbrella-beach",
+    },
+    {
+      title: "Other",
+      icon: "fas fa-question",
     },
   ];
 
