@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export default function Navbar(props) {
-    const { sidebarCollapse } = props
+  const { sidebarCollapse } = props;
 
-    return (
-        <nav className="navbar">
-
-            <button id="checkSidebar" onClick={sidebarCollapse}>
-                <i className="fas fa-bars"></i>
-            </button>
-        </nav>
-    )
+  return (
+    <nav className="navbar">
+      <button id="checkSidebar" onClick={sidebarCollapse}>
+        <i className="fas fa-bars"></i>
+      </button>
+    </nav>
+  );
 }

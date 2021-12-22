@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
-  --main-color: #8E66DB;
+  --main-color: #8e66db;
   --main-color-alt: #41007e;
   --second-color: #edddff;
-  --main-text-color: #9494AA;
-  --onhold-color: #4756AE;
+  --main-text-color: #9494aa;
+  --onhold-color: #4756ae;
   --onhold-color-alt: #3f4c94;
   --trans-height: 120px;
 }
@@ -19,13 +19,13 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 body {
-  background: #F4F3FC;
+  background: #f4f3fc;
 }
 
 .wrapper {
@@ -224,9 +224,9 @@ body {
   border: 1px solid #fff;
   border-radius: 50px;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   cursor: pointer;
 }
 
@@ -240,9 +240,9 @@ body {
 
 .sidebar .sidebar-item ul li {
   margin-top: 2rem;
-  padding: .4rem;
-  -webkit-transition: .3s;
-  transition: .3s;
+  padding: 0.4rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sidebar .sidebar-item ul li:hover {
@@ -255,8 +255,8 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .sidebar .sidebar-item ul li a:hover {
@@ -264,8 +264,8 @@ body {
 }
 
 .sidebar .sidebar-item ul li a i {
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   margin-right: 1rem;
 }
 
@@ -393,66 +393,6 @@ body {
   color: #000;
 }
 
-.loan {
-  width: 98%;
-}
-
-.loan .loan-container {
-  height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.loan .loan-container .loan-center {
-  padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.loan .loan-container .loan-center p {
-  font-size: 1.3rem;
-  padding-bottom: 1.2rem;
-}
-
-.loan .loan-container .loan-center a {
-  background: #4400C2;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: .5rem 2rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.loan .loan-container .loan-center a:hover {
-  background: #5900ff;
-}
-
 .make-payments .payments-content {
   width: 100%;
   height: 139px;
@@ -477,7 +417,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: .6;
+  opacity: 0.6;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
@@ -493,7 +433,7 @@ body {
 .make-payments .payments-content .payments-title i {
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--main-color);
 }
 
@@ -554,7 +494,7 @@ body {
 
 .make-payments .payments-content .payments-slider .pay-carousel .payments-slider-content a span {
   font-size: 1rem;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .make-payments .payments-content .payments-slider .payments-nav-btn {
@@ -568,8 +508,8 @@ body {
 
 .transactions {
   padding: 1rem;
-  background: #F8F8F8;
-  border-radius: .2rem;
+  background: #f8f8f8;
+  border-radius: 0.2rem;
   -webkit-box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.089);
           box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.089);
 }
@@ -639,7 +579,7 @@ body {
   color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
-  padding: .2rem .8rem;
+  padding: 0.2rem 0.8rem;
   border-radius: 1rem;
 }
 
@@ -666,7 +606,7 @@ body {
 }
 
 hr {
-  border: 1px solid #E5E5E5;
+  border: 1px solid #e5e5e5;
   margin: 2rem 0;
 }
 
@@ -678,7 +618,8 @@ hr {
   .mobile-hide {
     display: none;
   }
-  .main-content, .main-content-collapse {
+  .main-content,
+  .main-content-collapse {
     margin: 0;
   }
   .col-50 {
@@ -695,11 +636,11 @@ hr {
     background: #1a1a1a;
     cursor: pointer;
     position: absolute;
-    top: .3rem;
-    right: .3rem;
+    top: 0.3rem;
+    right: 0.3rem;
     width: 2rem;
     height: 2rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
   }
   .sidebar .sidebar-top button i {
     font-size: 1.5rem;
@@ -718,7 +659,7 @@ hr {
     opacity: 1;
   }
   .make-payments .payments-content .payments-title p {
-    opacity: .5;
+    opacity: 0.5;
   }
   .make-payments .payments-content .payments-title .mobile-nav button {
     margin-right: 1rem;
@@ -731,7 +672,7 @@ hr {
     color: #000;
   }
   .loan .loan-container .loan-center a {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .transactions .trans .img-txt p {
     font-size: 1.2rem;
@@ -739,10 +680,14 @@ hr {
   .transactions .trans .img-txt img {
     width: 50%;
   }
-  .transactions .trans .content p, .transactions .trans .content input {
+  .transactions .trans .content p,
+  .transactions .trans .content input {
     display: none;
   }
-  body, html, #root, .wrapper {
+  body,
+  html,
+  #root,
+  .wrapper {
     height: auto;
   }
 }
@@ -751,7 +696,8 @@ hr {
   .mobile-hide {
     display: none;
   }
-  .main-content, .main-content-collapse {
+  .main-content,
+  .main-content-collapse {
     margin: 0;
   }
   .col-50 {
@@ -768,11 +714,11 @@ hr {
     background: #1a1a1a;
     cursor: pointer;
     position: absolute;
-    top: .3rem;
-    right: .3rem;
+    top: 0.3rem;
+    right: 0.3rem;
     width: 2rem;
     height: 2rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
   }
   .sidebar .sidebar-top button i {
     font-size: 1.5rem;
@@ -791,7 +737,7 @@ hr {
     opacity: 1;
   }
   .make-payments .payments-content .payments-title p {
-    opacity: .5;
+    opacity: 0.5;
   }
   .make-payments .payments-content .payments-title .mobile-nav button {
     margin-right: 1rem;
@@ -804,9 +750,10 @@ hr {
     color: #000;
   }
   .loan .loan-container .loan-center a {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  .transactions .trans .content p, .transactions .trans .content input {
+  .transactions .trans .content p,
+  .transactions .trans .content input {
     display: none;
     margin: 0;
   }
@@ -815,21 +762,25 @@ hr {
     display: block;
     font-size: 1rem;
   }
-  body, html, #root, .wrapper {
+  body,
+  html,
+  #root,
+  .wrapper {
     height: auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .transactions .trans .content p, .transactions .trans .content input {
+  .transactions .trans .content p,
+  .transactions .trans .content input {
     display: block;
     margin: 0 1rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .transactions .trans .content .status {
     margin-left: 1rem;
     display: block;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -873,7 +824,7 @@ hr {
     opacity: 1;
   }
   .make-payments .payments-content .payments-title p {
-    opacity: .5;
+    opacity: 0.5;
   }
   .make-payments .payments-content .payments-title .mobile-nav {
     display: none;
@@ -887,7 +838,8 @@ hr {
   .transactions .trans .img-txt img {
     width: 50%;
   }
-  .transactions .trans .content p, .transactions .trans .content input {
+  .transactions .trans .content p,
+  .transactions .trans .content input {
     display: block;
     margin: 0 1.6rem;
     font-size: 1.1rem;
@@ -895,9 +847,12 @@ hr {
   .transactions .trans .content .status {
     margin-left: 0;
     display: block;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  body, html, #root, .wrapper {
+  body,
+  html,
+  #root,
+  .wrapper {
     height: 100%;
   }
 }

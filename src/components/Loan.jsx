@@ -1,18 +1,26 @@
-import React from 'react'
+import React from "react";
+import {
+  LoanSection,
+  LoanContainer,
+  LoanCenter,
+  LoanTitle,
+  LoanSubTitle,
+} from "./styles/LoanSectionStyles";
 
 export default function Loan(props) {
-    const { loan } = props;
-    return (
-        <div className="loan">
-            <div className="row">
-                <div className="loan-container">
-                    <div className="loan-center">
-                        <p>{loan && loan.title}</p>
-                        <a href={loan && loan.cta.link}>{loan && loan.cta.title}</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    )
+  const { loan } = props;
+  return (
+    <LoanSection>
+      <div className="row">
+        <LoanContainer>
+          <LoanCenter>
+            <LoanTitle>{loan && loan.title}</LoanTitle>
+            <LoanSubTitle href={loan && loan.cta.link}>
+              {loan && loan.cta.title}
+            </LoanSubTitle>
+          </LoanCenter>
+        </LoanContainer>
+      </div>
+    </LoanSection>
+  );
 }
