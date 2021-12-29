@@ -1,8 +1,6 @@
 import React from "react";
 
-export default function Navbar(props) {
-  const { sidebarCollapse } = props;
-
+const Navbar = ({ sidebarCollapse }) => {
   return (
     <nav className="navbar">
       <button id="checkSidebar" onClick={sidebarCollapse}>
@@ -10,4 +8,5 @@ export default function Navbar(props) {
       </button>
     </nav>
   );
-}
+};
+export default Navbar;

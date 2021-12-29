@@ -14,6 +14,8 @@ export default function Loan(props) {
       <div className="row">
         <LoanContainer>
           <LoanCenter>
+            <LoanTitle color="red">{loan && loan.title}</LoanTitle>
+            <LoanTitle color="blue">{loan && loan.title}</LoanTitle>
             <LoanTitle>{loan && loan.title}</LoanTitle>
             <LoanSubTitle href={loan && loan.cta.link}>
               {loan && loan.cta.title}

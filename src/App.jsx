@@ -148,22 +148,18 @@ export default function App() {
       <Navbar sidebarCollapse={sidebarCollapse} />
       <Sidebar user={user} menu={menu} sidebarCollapse={sidebarCollapse} />
       <div className="main-content">
-        <div className="container">
-          <div className="row">
-            <div className="col-50">
-              <Wallet wallet={wallet} />
-            </div>
-            <div className="col-50">
-              <Loan loan={loan} />
-            </div>
+        <div className="row container">
+          <div className="col-50">
+            <Wallet wallet={wallet} />
+          </div>
+          <div className="col-50">
+            <Loan loan={loan} />
           </div>
         </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <MakePayment data={paysData} />
-            </div>
+        <div className="container row">
+          <div className="col">
+            <MakePayment data={paysData} />
           </div>
         </div>
 

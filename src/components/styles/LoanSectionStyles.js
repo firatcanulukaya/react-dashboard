@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const LoanTitle = styled.p`
     font-size: 1.3rem;
     padding-bottom: 1.2rem;
+    background-color: ${props => props.color || "green"};
 `
 export const LoanSubTitle = styled.a`
     background: #4400C2;
@@ -12,9 +13,8 @@ export const LoanSubTitle = styled.a`
     padding: .5rem 2rem;
     border-radius: 5px;
     cursor: pointer;
-
     &:hover{
-background: #5900ff;
+        background: #5900ff;
     }
 `
 
